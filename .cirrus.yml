@@ -6,11 +6,10 @@ task:
   name: "Nexus-Kernel-Builder"
   timeout_in: 2h
   container:
-      image: ghcr.io/neutron-toolchains/docker-image:arch-neutron
+      image: ghcr.io/neutron-projects/docker-image:arch-neutron
       cpu: 8
       memory: 32G
 
   Build_script:
       - ln -fs /usr/share/zoneinfo/Asia/Dhaka /etc/localtime && date
-      - locale-gen en_US en_US.UTF-8
       - bash setup.sh
