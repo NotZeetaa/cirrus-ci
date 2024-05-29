@@ -6,7 +6,7 @@ task:
   name: "Nexus-Kernel-Builder"
   timeout_in: 2h
   container:
-      image: ghcr.io/neutron-projects/docker-image:arch-minimal
+      image: ghcr.io/neutron-projects/docker-image:arch
       cpu: 8
       memory: 32G
 
